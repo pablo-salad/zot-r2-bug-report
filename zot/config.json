@@ -1,0 +1,26 @@
+{
+    "distSpecVersion": "1.1.0-dev",
+    "storage": {
+      "rootDirectory": "/tmp/zot",
+      "storageDriver": {
+          "name": "s3",
+          "region": "auto",
+          "regionendpoint": "https://{R2_ID}.r2.cloudflarestorage.com",
+          "bucket": "{R2_BUCKET}",
+          "secure": true,
+          "skipverify": false,
+          "accesskey": "{R2_ACCESS_KEY}",
+          "secretkey": "{R2_SECRET_KEY}",
+          "chunksize": "{S3_CHUNK_SIZE}"
+      },
+      "dedupe": false
+    },
+    "http": {
+      "address": "0.0.0.0",
+      "port": "5000"
+    },
+    "log": {
+      "level": "debug"
+    }
+  }
+  
